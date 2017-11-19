@@ -4,8 +4,8 @@ This is a simple asp .net mvc project before you clone and start extend it read 
 
 
 ## Requierments:
-1.Visual Studio Community 2017.
-2.MSSQL or MYSQL server 
+*Visual Studio Community 2017.
+*MSSQL or MYSQL server 
 
 
 
