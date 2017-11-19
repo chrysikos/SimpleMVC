@@ -8,11 +8,6 @@ This is a simple asp .net mvc project before you clone and start extend it read 
 * MSSQL or MYSQL server 
 
 
-
-
-
-
-
 ###### First Step (Build)
 Before you proceed with any operation build your project in order to restore NuGet package. In our case we have only one package the EntityFramework. This process will download and resolve the references for the EntityFramework.
 
