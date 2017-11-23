@@ -16,10 +16,19 @@ namespace SimpleMVC.Controllers
             this.Context = new MyDbContext();
         }
         // GET: People
+        [ActionName("List")]
         public ActionResult Index()
         {
             List<Person> people = this.Context.Persons.ToList();
             return View("Index",people);
+        }
+
+        [HttpPost]
+        public ActionResult AddPeople(Person person)
+        {
+            this.Context.Persons.Add(person);
+            this.Context.SaveChanges();
+            return RedirectToAction("List", "People");
         }
     }
 }
