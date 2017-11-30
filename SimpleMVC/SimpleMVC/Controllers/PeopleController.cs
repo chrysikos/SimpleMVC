@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace SimpleMVC.Controllers
 {
+    [Authorize]
     public class PeopleController : Controller
     {
         public MyDbContext Context { get; private set; }
