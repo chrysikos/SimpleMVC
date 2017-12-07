@@ -109,7 +109,16 @@
     <Compile Include="Migrations\201711190839460_Initial.Designer.cs">
       <DependentUpon>201711190839460_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712071652062_add_books_table.cs" />
+    <Compile Include="Migrations\201712071652062_add_books_table.Designer.cs">
+      <DependentUpon>201712071652062_add_books_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712071659479_empty_to_add_book_seed.cs" />
+    <Compile Include="Migrations\201712071659479_empty_to_add_book_seed.Designer.cs">
+      <DependentUpon>201712071659479_empty_to_add_book_seed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Book.cs" />
     <Compile Include="Models\MyDbContext.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\User.cs" />
@@ -121,6 +130,8 @@
     <Content Include="Views\People\Index.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\People\Books.cshtml" />
+    <Content Include="Views\MasterLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -130,10 +141,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="assets\bootstrap\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711190839460_Initial.resx">
       <DependentUpon>201711190839460_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712071652062_add_books_table.resx">
+      <DependentUpon>201712071652062_add_books_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712071659479_empty_to_add_book_seed.resx">
+      <DependentUpon>201712071659479_empty_to_add_book_seed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

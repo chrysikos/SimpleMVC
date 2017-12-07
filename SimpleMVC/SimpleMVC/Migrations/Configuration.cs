@@ -18,6 +18,12 @@ namespace SimpleMVC.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
+            context.Books.Add(new Models.Book() { isbn = "111111", title = "Aaaaaa" });
+            context.Books.Add(new Models.Book() { isbn = "222222", title = "Bcccc" });
+            context.Books.Add(new Models.Book() { isbn = "333333", title = "Dsdsds" });
+            context.Books.Add(new Models.Book() { isbn = "677777", title = "Asdfghj" });
+            context.Books.Add(new Models.Book() { isbn = "234567", title = "Werty" });
+            context.SaveChanges();
         }
     }
 }

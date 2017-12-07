@@ -31,5 +31,11 @@ namespace SimpleMVC.Controllers
             this.Context.SaveChanges();
             return RedirectToAction("List", "People");
         }
+
+        public ActionResult Books()
+        {
+            List<Book> books = this.Context.Books.ToList();
+            return View("Books", books);
+        }
     }
 }
