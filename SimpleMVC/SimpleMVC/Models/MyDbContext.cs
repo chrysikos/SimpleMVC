@@ -8,7 +8,7 @@ namespace SimpleMVC.Models
 {
     public class MyDbContext : DbContext
     {
-        public MyDbContext() : base(@"Data Source=localhost\sqlexpress;Initial Catalog=TestDB;Persist Security Info=True;User ID=sa;Password=root")
+        public MyDbContext() : base("name=cns")
         {
 
         }
